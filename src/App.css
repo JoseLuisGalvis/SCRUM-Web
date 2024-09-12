@@ -1,0 +1,140 @@
+/* custom.css */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color: #333;
+  --bg-color: #f4f4f4;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+section {
+  padding: 4rem 0;
+}
+
+nav {
+  background-color: var(--primary-color);
+}
+
+h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: darken(var(--primary-color), 10%);
+  border-color: darken(var(--primary-color), 10%);
+}
+
+.section-image {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.section-image:hover {
+  transform: scale(1.05);
+}
+
+#artefactos {
+  background-color: #e8f4f8;
+}
+
+#ceremonias {
+  background-color: #e8f8ef;
+}
+
+footer {
+  background-color: var(--primary-color);
+}
+
+/* App.css */
+.logo-image {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 0 1em;
+}
+
+.logo-text {
+  margin-bottom: 0 !important;
+  text-decoration: none;
+}
+
+.card-gallery {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer_logo img {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 0.5em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+iframe {
+  width: 500px !important;
+  height: 200px !important;
+  border: 0;
+}
+
+/********   Responsive   *********/
+
+/*
+X-Small (xs): 0–575px
+Small (sm): ≥576px
+Medium (md): ≥768px
+Large (lg): ≥992px
+Extra Large (xl): ≥1200px
+Extra Extra Large (xxl): ≥1400px
+*/
+
+@media (min-width: 768px) and (max-width: 992px) {
+  iframe {
+    width: 250px !important;
+    height: 200px !important;
+    border: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  iframe {
+    width: 300px !important;
+    height: 200px !important;
+    border: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .logo-image {
+    width: 40px;
+    height: 50px;
+    margin: 0 0.5em;
+  }
+
+  iframe {
+    width: 250px !important;
+    height: 200px !important;
+    border: 0;
+  }
+
+  .footer_logo img {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 0.5em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+}
