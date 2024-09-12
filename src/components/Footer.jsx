@@ -56,6 +56,7 @@ const Footer = () => {
               allowFullScreen="True"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              title="Mapa de ubicación" 
             ></iframe>
           </div>
           <div className="col-md-4">
